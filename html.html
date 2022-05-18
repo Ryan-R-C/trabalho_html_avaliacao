@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML EXAMPLE</title>
+    <style>
+        /* 
+        English:
+            A good way to create css classes names is about it's meaning, never a class should be named as it's style
+        Português:
+            Uma boa prática na criação de nomes de classes é sobre seu significado, nunca uma uma classe deve ser nomeada com seu estilo 
+        */
+        /* 
+        English:
+            CSS classes are a way to style the screen elements, it is also a good way to share responsibility about the style
+            In CSS should be all style  and HTML, all content. Classes are extremely recommended by that.
+        Português:
+            Classes CSS são uma ótima forma de estilizar elementos na tela, é, também, uma boa forma de dividir a responsabilidade da estilização
+            No CSS deve estar todo o estilo e no HTML todo o conteúdo. Classes são extremamente recomendadas por isso.
+        */
+
+        /* 
+        English:
+            BEM is a good pratice to write css classes, instead of just give them random names, they are named as a family tree
+
+        Português:
+            BEM é uma boa prática de escrever classes css, ao invés de dar-lhes nomes aleatórios, seus nomes são dados como uma árvore genealógica
+        */
+        .main-quote {
+            color: green;
+        }
+
+        .main-quote__destach {
+            font-size: 25px;
+        }
+
+        .main-quote__destach--more {
+            color: red;
+        }
+
+        .main-quote__destach--less {
+            color: blue;
+        }
+
+    </style>
+    <!-- 
+        English:
+            All this style could be in a different file, called  main-quote.css and imported here using a link tag, highly recommended when there are many different styles in a page, or a page that share styles with others.
+            The link tag:
+        Português:
+            Todo este estilo poderia estar em um arquivo diferente chamado main-quote.css e importado aqui como uma tag link, altamente recomendade quando se trata de muitos estilos numa mesma página, ou uma página que compartilha estilos com outras
+            A tag link:
+
+        <link rel="stylesheet" href="main-quote.css">
+    -->
+    </head>
+
+<body>
+    <h1>
+        citação
+    </h1>
+    <!-- 
+        English:
+        HTML wraps content to give it meaning.
+        And it is important to create a semantic HTML, as good to other developers as for future maintenance, reference:
+        https://www.w3schools.com/html/html5_semantic_elements.asp
+        
+        Português:
+        HTML envolve conteúdo para dar-lhe significado. 
+        E é importantíssimo a criação de um HTML semântico, tanto para outros desenvolvedores como para futura manutenção, referência
+        https://www.w3schools.com/html/html5_semantic_elements.asp
+    -->
+
+    <!-- 
+        English:
+            Each tag in HTML has a specif use, for example in this page, the tag blockquote is used in correct way, wrap a block of quote. 
+            The strong tag indicates a strong importance, or urgency.
+            And br tag specifies the break row, remeber that it has a meaning in HTML, different of a generic spacing, if that were the case it would in CSS
+        
+        Português:
+            Cada tag em HTML tem um uso específico, por exemplo, nesta página, a tag blockquote é usada para envolver bloco de citação.
+            A tag strong indíca uma forte importância ou urgência.
+            A tag br especifíca uma quebra de linha, lembre-se, ela tem uma razão para estar no HTML, diferentemente de um espaço genéricos, que, se fosse o caso, seria em CSS
+    -->
+
+
+
+    <main>
+        <blockquote class="main-quote">
+            Não há <strong class="main-quote__destach main-quote__destach--more">saber maior</strong> ou <strong
+                class="main-quote__destach main-quote__destach--less">saber menor</strong>: há saberes diferentes.
+            <br>
+            Paulo Freire
+        </blockquote>
+    </main>
+</body>
+
+</html>
