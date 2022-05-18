@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <style>
+        /*
+ * Globals
+ */
+
+        /* Links */
+        a,
+        a:focus,
+        a:hover {
+            color: #fff;
+        }
+
+        /* Custom default button */
+        .btn-default,
+        .btn-default:hover,
+        .btn-default:focus {
+            color: #333;
+            text-shadow: none;
+            /* Prevent inheritence from `body` */
+            background-color: #fff;
+            border: 1px solid #fff;
+        }
+
+
+        /*
+ * Base structure
+ */
+
+        html,
+        body {
+            height: 100%;
+            background-color: #fff;
+        }
+
+
+        iframe {
+            width: 60vw;
+            /* margin: 5% 10%; */
+            height: 30vh;
+            /* margin: 5% 20%; */
+            border: 1px solid;
+        }
+
+        .site-wrapper {
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+            /* min-height:  100vh; */
+        }
+
+        /* Extra markup and styles for table-esque vertical and horizontal centering */
+        .site-wrapper {
+            display: table;
+            width: 100%;
+            padding: 10%;
+            min-height: 600px;
+            background-color: rgb(119, 119, 119);
+            /*height: 100%; */
+            /*min-height: 100%;*/
+        }
+
+        .site-wrapper-inner {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .cover-container {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        /* Padding for spacing */
+        .inner {
+            padding: 30px;
+        }
+
+
+        /*
+ * Header
+ */
+        .masthead-brand {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .masthead-nav>li {
+            display: inline-block;
+        }
+
+        .masthead-nav>li+li {
+            margin-left: 20px;
+        }
+
+        .masthead-nav>li>a {
+            padding-right: 0;
+            padding-left: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            /* IE8 proofing */
+            color: rgba(255, 255, 255, .75);
+            border-bottom: 2px solid transparent;
+        }
+
+        .masthead-nav>li>a:hover,
+        .masthead-nav>li>a:focus {
+            background-color: transparent;
+            border-bottom-color: #a9a9a9;
+            border-bottom-color: rgba(255, 255, 255, .25);
+        }
+
+        .masthead-nav>.active>a,
+        .masthead-nav>.active>a:hover,
+        .masthead-nav>.active>a:focus {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            .masthead-brand {
+                float: left;
+            }
+
+            .masthead-nav {
+                float: right;
+            }
+        }
+
+
+        /*
+ * Cover
+ */
+
+        .cover {
+            padding: 0 20px;
+        }
+
+        .cover .btn-lg {
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        /*
+ * Affix and center
+ */
+
+        @media (min-width: 768px) {
+
+            /* Pull out the header and footer */
+            .masthead {
+                position: fixed;
+                top: 0;
+            }
+
+            /* Start the vertical centering */
+            .site-wrapper-inner {
+                vertical-align: middle;
+            }
+
+        }
+
+
+
+        .jumbotron {
+            margin: 10% 20%;
+        }
+
+        .dashed{
+            text-decoration: dashed;
+        }
+        .lead--marged{
+            padding: 5%;
+        }
+        .black,
+        .black :hover
+        {
+            color: var(--bs-body-color)!important;  
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="container">
+                    <div class="masthead clearfix">
+                    </div>
+                    <img width="100%" src="https://logodownload.org/wp-content/uploads/2020/02/uninter-logo.png" alt="">
+
+                    <div class="inner cover">
+                        <h1 class="cover-heading">Atividade Prática</h1>
+                        <p class="lead lead--marged">
+                            CENTRO UNIVERSITÁRIO INTERNACIONAL UNINTER
+                            ESCOLA SUPERIOR POLITÉCNICA
+                            BACHARELADO EM ENGENHARIA DE SOFTWARE
+                            FUNDAMENTOS DE DESENVOLVIMENTO DE SOFTWARE
+                        </p>
+                        <!-- <p class="lead">
+                            <a href="#" class="btn btn-lg btn-default">Learn more</a>
+                        </p> -->
+
+                        <p>
+                            Ryan Rodrigo Costa - 3989221
+                        </p>
+                        <p>
+                            Professor(a): Luciane Kanashiro
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <p>
+                            Porto Feliz - SP (Polo Itu)
+                        </p>
+
+                        <p>
+                            2021
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="jumbotron">
+            <h3>
+                1 - Conceitue corretamente Software com sua palavras e dê um exemplo de software categorizando-o de
+                acordo com a classificação utilizada na aula 1.
+            </h3>
+            <hr class="my-4">
+            <p class="dashed">Solução do aluno:</p> 
+
+
+            <p>Software é uma sequência de instruções, passos, a serem interpretados e incrementados pelo computador,
+                assim, atingindo tarefas específicas. Software, como o próprio nome sugere, é "soft" (em tradução livre:
+                macio, ou mole), podendo ser moldado livremente para uma tarefa especíca, ou requisitos específicos e
+                assim por diante. Ele possui três principais categorias: software de sistema, software utilitário e
+                software aplicativo.</p>
+            <p>Software de sistema é considerado essencial para o funcionamento do computador de forma como é comumente
+                reconhecido. É esse sistema que faz o dialogo entre usuário, aplicação e a parte mecânica do computador,
+                ou seja, o intermediador entre software e hardware. O tão conhecido sistema operacional. Exemplos são
+                Windows e as inúmeras distribuições Linux, como Mint, Ubuntu e PopOs</p>
+            <p>Software utilitário é qualquer programa não obrigatório para o Sistema Operacional, mas extremamente
+                útil. São programas utilizados para suprir deficiências dos sistemas operacionais. Pode-se incluir nos
+                utilitários programas para: compactação de dados, aumento de desempenho de máquinas, overclock, limpeza
+                de discos rígidos, acesso à internet, partilha de conexões, etc. </p>
+            <p>Software aplicativo são programas e ferramentas tem aplicações práticas para o usuário, facilitando seu
+                uso uso ou entregando um algo novo a ele. Sem eles uma tarefa simples como armazenar informação em um
+                arquivo de texto seria absolutamente complexa e desgastante para o usuário leigo, incluindo ter de abrir
+                o temido terminal de tela preta. São exemplos: Word, Excel, Power Point, navegadores e jogos. Sendo a
+                maior parcela dos softwares </p>
+        </div>
+
+
+        <section class="jumbotron">
+            <h3>
+                2 - Várias dimensões e fatores para qualidade de sofware foram propostas ao longo dos anos. Cite e
+                explique um fator ou dimensão de qualidade de software diferente das apresentadas em aula.
+
+            </h3>
+            <hr class="my-4">
+            <p class="dashed">Solução do aluno:</p> 
+
+
+            <p>Como definição de qualidade de software, tem-se a seguinte afirmação: "Qualidade de software é una área
+                do conhecimento em engenharia de software e seu objetivo é garantir a qualidade do software através da
+                definição e normatização de processos de desenvolvimento". Várias fatores influênciam na qualidade de
+                Software, inclusive a Portabilidade.</p>
+            <p>A portabilidade é importantissíma para o usuário, tem termos gerais, sua definição vem com uma simples
+                pergunta: "É possível utilizar o produto em diversas plataformas com pequeno esforço de adaptação?".
+                Imagine que o mesmo navegador que usa em seu sistema operacional Windows é completamentamente diferente
+                em seu Linux Mint, não faria sentido para o usuário. A portabilidade se subdivide em quatro princiapais
+                tópicos: Adaptabilidade, Capacidade para ser instalado, Conformidade e Capacidade para substituir.</p>
+            <p>Entende-se por Adaptabilidade, como a facilidade de adaptar a outros ambientes sem aplicar outras ações
+                ou meios além dos fornecidos para esta finalidade no software considerado.</p>
+            <p>Semelhantemente a Capacidade para ser instalado é se a instalação em outros ambientes é simples.</p>
+            <p>De outra forma a Conformidade se define pelo de acordo com padrões ou convenções de portabilidade.</p>
+            <p>E a Capacidade para substituir, como o próprio nome evidencia, é a capacidade de ser substituido por
+                outro software. Algo que não é desejado por nenhum software.</p>
+        </section>
+
+
+
+        <section class="jumbotron">
+            <h3>
+
+                3 - “A computação em nuvem é a entrega de recursos de TI sob demanda por meio da Internet com definição
+                de preço de pagamento conforme o uso.”
+            </h3>
+
+            <p><a href="https://aws.amazon.com/pt/what-is-cloud-computing/" target="_blank" class="black">https://aws.amazon.com/pt/what-is-cloud-computing/</a>. O que é cloud computing (computação em
+                nuvem)? - Amazon Web Services. Acessado em 10/04/2021</p>
+
+            <h3>Cite e descreva os modelos de computação em nuvem, quanto aos serviços que oferecem.</h3>
+
+            <hr class="my-4">
+            <p class="dashed">Solução do aluno:</p> 
+
+            <p>Computação em Núvem, ou Cloud Computing, é o fornecimento de serviços de computação, incluindo
+                servidores, armazenamento, bancos de dados, rede, software, análise e inteligência, pela Internet (“a
+                nuvem”) para oferecer inovações mais rápidas, recursos flexíveis e economias de escala. Usado por
+                pequenas e grandes empresas ao redor do mundo. Ela possui quatro modelos distintos de serviço: IaaS,
+                PaaS, DaaS e SaaS.</p>
+            <p>IaaS, "Infrastructure as a Service", ou Infraestrutura como Serviço refere-se a serviços online que
+                fornecem APIs de alto nível usadas para desreferenciar vários detalhes de baixo nível da infraestrutura
+                de rede subjacente, como recursos de computação física, localização, particionamento de dados,
+                dimensionamento, segurança, backup etc. Nos Data Center, locais onde há um grande acumulo de servidores,
+                por parte dos provedores, são executadas máquinas virtuais como convidados. Essas máquinas virtuais, ou
+                "Pools" são partições de um grande sistema Linux, que garante o isolamento dos usuários usando as
+                tecnologias Linux como "namespaces" e "Cgroups". Sua capacidade é dimensionada automaticamente, o que
+                evita o problema de provisionamento excessivo. Por outro lado os provedores de nuvem geralmente cobram
+                serviços IaaS em uma base de computação utilitária: o custo reflete a quantidade de recursos alocados e
+                consumidos.</p>
+            <p>PaaS, "Plataform as a Service" ou Plataforma como Serviço dá aos desenvolvedores as ferramentas
+                necessárias para criar e hospedar aplicativos Web. Sua ideia principal é proporcionar aos usuários
+                acesso a componentes necessários do desenvolvimento e operar rapidamente seus projetos web, sem a
+                necessecidade de configurar ou gerenciar a infraestrutura de seus servidors, armazenamento, redes e base
+                de dados. A definição do NIST (National Institute of Standards and Technology) de computação em nuvem
+                define Plataforma como um serviço como: "A capacidade oferecida ao consumidor é implementar na
+                infraestrutura em nuvem os aplicativos criados ou adquiridos ou controlados pelo consumidor criados
+                usando linguagens de programação, bibliotecas, serviços e ferramentas suportados pelo provedor". Em
+                termos gerais o consumidor não controla a infraestrutura, mas tem controle sobre os aplicativos
+                implantados e possivelmente configurações para o ambiente de hospedagem.</p>
+            <p>DaaS, "Desktop as a Service" ou Área de trabalho como serviço é uma solução de "Cloud", onde a
+                infraestrutura de desktop virtual é terceirizada para um provedor. Sua vantagem é seu modelo eficiênte
+                no qual o provedor de serviços controla todas as responsabilidades da parte do Back-End que normalmente
+                seriam feitos pelo software. Usa execução distribuída ou execução remota, dependendo do tipo de
+                implementação. </p>
+            <p>SaaS - "Software as a Service" ou Software como Serviço: software como um serviço oferece um produto
+                completo, executado e gerenciado pelo provedor de serviços. Sua oferta é não é necessário pensar sobre
+                como o serviço é mantido ou como a infraestrutura subjacente é gerenciada, apenas precisará pensar em
+                como usará este tipo específico de software.(p.ex.: Google Docs , Microsoft SharePoint Online);</p>
+
+        </section>
+
+
+
+        <section class="jumbotron">
+            <h3>
+                4 - HTML é uma linguagem descritiva de hipertextos composta por tags. Hoje o HTML em sua versão mais
+                recente combina outras tecnologias como CSS e JavaScript que complementam os hipertextos com estilo e
+                interatividade respectivamente.” Cite duas tags html, explicando sua função.
+            </h3>
+
+            <hr class="my-4">
+            <p class="dashed">Solução do aluno:</p> 
+
+            <p>Tags HTML são uma forma de dar contexto e informação a texto da página, seu desenvolvimento correto traz
+                muitos benefícios para a aplicação, como a acessibilidade para pessoas com deficiência visual e
+                ranqueamento melhor pelos algoritmos de busca. Existem tags opostas como main e aside e head e body.</p>
+            <p>Na tag head é inserida toda a informação de metadados, como língua, titulo, links externos de
+                estilização, a url padrão e muitos outros. Sua contraparte, o body, possui todo o conteúdo exibido para
+                o usuário, como parágrafos, imagens, hyperlinks, tabelas e inúmeras outras.</p>
+            <p>Como filhos do body, as tags main e aside. Aside representa uma seção de uma página que consiste de
+                conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado
+                separado do conteúdo. Essas seções são, muitas vezes, representadas como barras laterais. Por outro lado
+                a tag main define o conteúdo principal dentro do body em seu documento ou aplicação. Entende-se como
+                conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade
+                central da aplicação. </p>
+        </section>
+
+        <div class="jumbotron">
+            <h3>5 - “HTML é uma linguagem descritiva de hipertextos composta por tags. Hoje o HTML em sua versão mais
+                recente combina outras tecnologias como CSS e JavaScript que complementam os hipertextos com estilo e
+                interatividade respectivamente.”</h3>
+            <h3>Codifique uma página html com aparência semelhante a imagem abaixo. O código deve trazer também comentários
+                com a tag específica de comentário.
+            </h3>
+            <hr class="my-4">
+            <p class="dashed">Solução do aluno:</p> 
+            <img src="code.png" width="100%" alt="">
+            <p class="dashed">Página criada:</p> 
+            <iframe src="../trabalho/html.html" frameborder="0"></iframe>
+        </div>
+
+        <div class="jumbotron">
+            <h3>
+                6 - “O Javascript é uma linguagem de programação bastante popular hoje que é utilizada em diversos
+                contextos, desde programação de jogos até servidores. No entanto, um dos seus usos mais icônicos é associado
+                com interação em páginas HTML no lado do cliente.”
+            </h3>
+            <h3>Considerando a linguagem JavaScript, crie uma variável chamada nomePessoa eatribua o valor Pedro a ela</h3>
+            <hr class="my-4">
+            <p class="dashed">Solução do aluno:</p> 
+            <img src="javascript.png" width="100%" alt="">
+        </div>
+
+    </main>
+</body>
+
+
+</html>
